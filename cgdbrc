@@ -1,0 +1,3 @@
+map <Up> <C-u>
+map <Down> <C-d>
+set tabstop=4

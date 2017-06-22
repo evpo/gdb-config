@@ -28,3 +28,5 @@ define printqs5dynamic
   end
   printf "\"\n"
 end
+
+source ~/.gdb/stl_n_eastl_visualizers_v_02.gdb
