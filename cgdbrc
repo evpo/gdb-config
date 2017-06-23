@@ -1,5 +1,5 @@
 map <Up> <C-u>
 map <Down> <C-d>
 set tabstop=4
-imap <C-k> <Esc>
-map <C-j> i
+imap <F2> <Esc>
+map <F2> i
