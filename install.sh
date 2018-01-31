@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ln -s $PWD/gdbinit ~/.gdbinit
-ln -s $PWD/cgdbrc ~/.cgdb/
+ln -fs $PWD/gdbinit ~/.gdbinit
+ln -fs $PWD/cgdbrc ~/.cgdb
