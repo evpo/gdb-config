@@ -29,4 +29,9 @@ define printqs5dynamic
   printf "\"\n"
 end
 
+define fins
+    finish
+    step
+end
+
 source ~/.gdb/stl_visualizers.gdb
