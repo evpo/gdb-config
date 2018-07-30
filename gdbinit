@@ -35,3 +35,4 @@ define fins
 end
 
 source ~/.gdb/stl_visualizers.gdb
+source ~/.gdb/file-path.py

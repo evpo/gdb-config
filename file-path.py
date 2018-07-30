@@ -1,4 +1,4 @@
-import pyperclip
+import subprocess
 
 class Curpath (gdb.Command):
     """print absolute path"""
@@ -7,6 +7,7 @@ class Curpath (gdb.Command):
 
     def invoke(self, arg, from_tty):
         symtabline = gdb.selected_frame().find_sal()
-        pyperclip.copy(symtabline.symtab.fullname() + ":" + str(symtabline.line))
+        cmd = subprocess.Popen(["xclip","-sel", "clip"], stdin=subprocess.PIPE)
+        cmd.communicate(symtabline.symtab.fullname() + ":" + str(symtabline.line))
 
 Curpath()
