@@ -7,7 +7,7 @@ class Curpath (gdb.Command):
 
     def invoke(self, arg, from_tty):
         symtabline = gdb.selected_frame().find_sal()
-        cmd = subprocess.Popen(["xclip","-sel", "clip"], stdin=subprocess.PIPE)
+        cmd = subprocess.Popen(["xclip","-sel", "clip"], stdin=subprocess.PIPE, universal_newlines=True)
         cmd.communicate(symtabline.symtab.fullname() + ":" + str(symtabline.line))
 
 Curpath()
